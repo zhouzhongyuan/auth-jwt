@@ -5,7 +5,7 @@ import RaisedButton from 'material-ui/RaisedButton'
 import TextFiled from 'material-ui/TextField'
 
 const SignUpFrom =({
-    onSubimit,
+    onSubmit,
     onChange,
     errors,
     user
@@ -13,7 +13,7 @@ const SignUpFrom =({
     <Card
         className="container"
     >
-        <form action="/" onSubmit={onSubimit}>
+        <form action="/" onSubmit={onSubmit}>
             <h2 className="card-heading">注册</h2>
             {errors.summary && <p className="error-message">{errors.summary}</p>}
             <div className="field-line">
