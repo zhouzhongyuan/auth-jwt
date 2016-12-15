@@ -11,14 +11,14 @@ const SignUpFrom =({
     user
 }) => (
     <Card
-        classNmae="container"
+        className="container"
     >
         <form action="/" onSubmit={onSubimit}>
             <h2 className="card-heading">注册</h2>
             {errors.summary && <p className="error-message">{errors.summary}</p>}
             <div className="field-line">
                 <TextFiled
-                    flatingLabelText="用户名"
+                    floatingLabelText="用户名"
                     name="name"
                     errorText={errors.name}
                     onChange={onChange}
@@ -27,17 +27,18 @@ const SignUpFrom =({
             </div>            
             <div className="field-line">
                 <TextFiled
-                    flatingLabelText="电子邮件"
+                    floatingLabelText="电子邮件"
                     name="email"
                     errorText={errors.email}
                     onChange={onChange}
                     value={user.email}
                 />
             </div>           
-            <div classpassword="field-line">
+            <div className="field-line">
                 <TextFiled
-                    flatingLabelText="密码"
-                    password="password"
+                    floatingLabelText="密码"
+                    name="password"
+                    type="password"
                     errorText={errors.password}
                     onChange={onChange}
                     value={user.password}

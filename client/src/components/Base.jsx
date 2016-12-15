@@ -12,7 +12,7 @@ const Base  = ({
 
             <div className="top-bar-right">
                 <Link to="/login">登录</Link>
-                <Link to="/singup">注册</Link>
+                <Link to="/signup">注册</Link>
             </div>
         </div>
         {children}
